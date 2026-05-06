@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "founder-weekly-operating-review-agent"
+version = "0.1.0"
+description = "Generate a founder weekly operating review from startup metrics."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Shubham Singh" }]
+dependencies = []
+
+[project.scripts]
+founder-weekly-review = "founder_weekly_review.cli:main"
