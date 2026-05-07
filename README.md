@@ -18,6 +18,8 @@ Founders lose time turning scattered weekly metrics into a clear operating narra
 
 ## Use This In Your Company
 
+This repo is designed to be forked into an internal company workflow. Fork it, replace the sample inputs with your company context, and keep only the parts that match your operating cadence. No permission request or sales call is needed before using it; the repo is the handoff. Check the license if you plan to redistribute your version.
+
 - Use it as a weekly operating review generator for founders and Founder Office teams.
 - Keep the output set: CEO review, investor-safe update, risks, team asks, next-week plan, and JSON analysis.
 - Replace only the weekly metrics CSV and company context to start.
