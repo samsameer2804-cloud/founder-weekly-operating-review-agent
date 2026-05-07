@@ -16,6 +16,21 @@ Founders lose time turning scattered weekly metrics into a clear operating narra
 - Fork it when leadership needs one operating packet that connects growth, churn, activation, pipeline, runway, support load, and product issues.
 - Replace the sample metrics, thresholds, and output format with your company's operating cadence.
 
+## Use This In Your Company
+
+- Use it as a weekly operating review generator for founders and Founder Office teams.
+- Keep the output set: CEO review, investor-safe update, risks, team asks, next-week plan, and JSON analysis.
+- Replace only the weekly metrics CSV and company context to start.
+
+## Minimum Edits To Make It Yours
+
+- examples/weekly_metrics.csv
+- examples/company_context.md
+- risk thresholds in code/config
+- output language after generation
+
+The fastest path is: fork the repo, replace the inputs above, run the demo or open the template, then adjust only the parts that reflect your company's workflow.
+
 ## What It Produces
 
 ```text
