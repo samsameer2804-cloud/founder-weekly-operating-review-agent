@@ -26,12 +26,16 @@ This repo is designed to be forked into an internal company workflow. Fork it, r
 
 ## Minimum Edits To Make It Yours
 
-- examples/weekly_metrics.csv
-- examples/company_context.md
-- risk thresholds in code/config
-- output language after generation
+Change these first:
 
-The fastest path is: fork the repo, replace the inputs above, run the demo or open the template, then adjust only the parts that reflect your company's workflow.
+| Edit | Where | Why |
+|---|---|---|
+| Replace weekly metrics. | `examples/weekly_metrics.csv` | This is the core input for risks, priorities, wins, blockers, and follow-ups. |
+| Rewrite company context. | `examples/company_context.md` | Makes the review read like your business, not a generic demo. |
+| Tune risk and priority logic. | `src/founder_weekly_review/analysis.py` | Adjusts what the system escalates to the founder. |
+| Review the generated operating review. | output Markdown/report | Keeps judgment with the founder or operator before sharing. |
+
+You can leave the reporting format, CLI, and sample output structure alone on the first fork. Run it with your metrics once before changing the analysis code.
 
 ## What It Produces
 
