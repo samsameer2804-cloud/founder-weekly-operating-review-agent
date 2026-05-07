@@ -47,6 +47,10 @@ next_week_plan.md            Focus areas and execution plan
 analysis.json                Structured metric deltas, risks, and priorities
 ```
 
+## AI leverage input
+
+[Founder AI Workflow ROI OS](https://github.com/shubham1502-hue/founder-ai-workflow-roi-os) can feed the weekly operating review with automation priorities, AI pilots, owner assignments, risk flags, and estimated savings.
+
 ## Quickstart
 
 ```bash
@@ -75,17 +79,17 @@ See [docs/sample_weekly_operating_review.md](docs/sample_weekly_operating_review
 
 ```text
 founder-weekly-operating-review-agent/
-├── examples/
-│   ├── company_context.md
-│   └── weekly_metrics.csv
-├── src/founder_weekly_review/
-│   ├── analysis.py
-│   ├── cli.py
-│   ├── metrics.py
-│   └── reporting.py
-├── tests/
-│   └── test_analysis.py
-└── README.md
+|-- examples/
+|   |-- company_context.md
+|   `-- weekly_metrics.csv
+|-- src/founder_weekly_review/
+|   |-- analysis.py
+|   |-- cli.py
+|   |-- metrics.py
+|   `-- reporting.py
+|-- tests/
+|   `-- test_analysis.py
+`-- README.md
 ```
 
 ## Metrics Expected
