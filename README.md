@@ -106,7 +106,7 @@ Integrated:
 Use this repo with the Founder OS ecosystem if you want to connect it to adjacent operating workflows.
 
 - Use as the weekly review layer.
-- Pull inputs from [founder-os-revenue-engine](https://github.com/shubham1502-hue/founder-os-revenue-engine), [founder-customer-onboarding-os](https://github.com/shubham1502-hue/founder-customer-onboarding-os), [founder-retention-expansion-os](https://github.com/shubham1502-hue/founder-retention-expansion-os), [founder-ai-workflow-roi-os](https://github.com/shubham1502-hue/founder-ai-workflow-roi-os), and [board-pack-investor-update-agent](https://github.com/shubham1502-hue/board-pack-investor-update-agent).
+- Pull inputs from [founder-os-revenue-engine](https://github.com/shubham1502-hue/founder-os-revenue-engine), [founder-customer-onboarding-os](https://github.com/shubham1502-hue/founder-customer-onboarding-os), [founder-retention-expansion-os](https://github.com/shubham1502-hue/founder-retention-expansion-os), [founder-ai-workflow-roi-os](https://github.com/shubham1502-hue/founder-ai-workflow-roi-os), [founder-hiring-talent-pipeline-os](https://github.com/shubham1502-hue/founder-hiring-talent-pipeline-os), and [board-pack-investor-update-agent](https://github.com/shubham1502-hue/board-pack-investor-update-agent).
 - Pull product decisions and customer signal themes from [founder-product-feedback-roadmap-os](https://github.com/shubham1502-hue/founder-product-feedback-roadmap-os).
 - Use it even if you have no other repo.
 
@@ -118,6 +118,7 @@ Before:
 - [founder-customer-onboarding-os](https://github.com/shubham1502-hue/founder-customer-onboarding-os) for onboarding and activation risks.
 - [founder-retention-expansion-os](https://github.com/shubham1502-hue/founder-retention-expansion-os) for customer health, renewal risk, expansion opportunities, churn drivers, and proof opportunities.
 - [founder-ai-workflow-roi-os](https://github.com/shubham1502-hue/founder-ai-workflow-roi-os) for AI leverage priorities.
+- [founder-hiring-talent-pipeline-os](https://github.com/shubham1502-hue/founder-hiring-talent-pipeline-os) for role priorities, candidate decisions, trial projects, reference checks, offer risks, and hiring bottlenecks.
 - Weekly metrics from your internal tracker.
 
 This repo produces:
@@ -144,9 +145,13 @@ After:
 
 [Founder Product Feedback Roadmap OS](https://github.com/shubham1502-hue/founder-product-feedback-roadmap-os) can feed the weekly operating review with roadmap decisions, repeated customer themes, product gaps, non-product fixes, discovery needs, owner actions, and product risks.
 
+## Hiring pipeline input
+
+[Founder Hiring Talent Pipeline OS](https://github.com/shubham1502-hue/founder-hiring-talent-pipeline-os) can feed the weekly operating review with role priorities, candidate decisions, trial projects, reference checks, offer risks, and hiring bottlenecks.
+
 ## Where this fits in the Founder OS
 
-Use this as the weekly cadence layer. It can absorb signals from `founder-os-revenue-engine`, `founder-customer-onboarding-os`, `founder-retention-expansion-os`, `startup-metrics-playbook`, `founder-ai-workflow-roi-os`, and `board-pack-investor-update-agent`.
+Use this as the weekly cadence layer. It can absorb signals from `founder-os-revenue-engine`, `founder-customer-onboarding-os`, `founder-retention-expansion-os`, `startup-metrics-playbook`, `founder-ai-workflow-roi-os`, `founder-hiring-talent-pipeline-os`, and `board-pack-investor-update-agent`.
 
 ## Why this matters
 
