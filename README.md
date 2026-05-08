@@ -97,6 +97,39 @@ Customize these before using the repo for a real company:
 - review sections
 - decision owners
 
+## Standalone or integrated
+
+Standalone:
+Use this repo by itself if you only need a weekly founder operating review from metrics, risks, asks, and company context. Fork it, replace the sample input, run the workflow or copy the templates, and use the main output in your next founder review.
+
+Integrated:
+Use this repo with the Founder OS ecosystem if you want to connect it to adjacent operating workflows.
+
+- Use as the weekly review layer.
+- Pull inputs from [founder-os-revenue-engine](https://github.com/shubham1502-hue/founder-os-revenue-engine), [founder-customer-onboarding-os](https://github.com/shubham1502-hue/founder-customer-onboarding-os), [founder-ai-workflow-roi-os](https://github.com/shubham1502-hue/founder-ai-workflow-roi-os), and [board-pack-investor-update-agent](https://github.com/shubham1502-hue/board-pack-investor-update-agent).
+- Use it even if you have no other repo.
+
+## Lifecycle handoff
+
+Before:
+
+- [founder-os-revenue-engine](https://github.com/shubham1502-hue/founder-os-revenue-engine) for GTM and funnel risks.
+- [founder-customer-onboarding-os](https://github.com/shubham1502-hue/founder-customer-onboarding-os) for onboarding and activation risks.
+- [founder-ai-workflow-roi-os](https://github.com/shubham1502-hue/founder-ai-workflow-roi-os) for AI leverage priorities.
+- Weekly metrics from your internal tracker.
+
+This repo produces:
+
+- CEO-ready weekly operating review
+- Risks and decisions
+- Team asks
+- Next-week plan
+
+After:
+
+- [board-pack-investor-update-agent](https://github.com/shubham1502-hue/board-pack-investor-update-agent) for investor or board narrative.
+- Founder and leadership decisions for the next operating cycle.
+
 ## Onboarding input
 
 [Founder Customer Onboarding OS](https://github.com/shubham1502-hue/founder-customer-onboarding-os) can feed the weekly operating review with onboarding health, activation risk, founder attention accounts, SLA issues, owner gaps, and next actions.
