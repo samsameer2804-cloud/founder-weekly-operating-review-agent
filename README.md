@@ -107,6 +107,7 @@ Use this repo with the Founder OS ecosystem if you want to connect it to adjacen
 
 - Use as the weekly review layer.
 - Pull inputs from [founder-os-revenue-engine](https://github.com/shubham1502-hue/founder-os-revenue-engine), [founder-customer-onboarding-os](https://github.com/shubham1502-hue/founder-customer-onboarding-os), [founder-retention-expansion-os](https://github.com/shubham1502-hue/founder-retention-expansion-os), [founder-ai-workflow-roi-os](https://github.com/shubham1502-hue/founder-ai-workflow-roi-os), and [board-pack-investor-update-agent](https://github.com/shubham1502-hue/board-pack-investor-update-agent).
+- Pull product decisions and customer signal themes from [founder-product-feedback-roadmap-os](https://github.com/shubham1502-hue/founder-product-feedback-roadmap-os).
 - Use it even if you have no other repo.
 
 ## Lifecycle handoff
@@ -138,6 +139,10 @@ After:
 ## Retention and expansion input
 
 [Founder Retention Expansion OS](https://github.com/shubham1502-hue/founder-retention-expansion-os) can feed the weekly operating review with customer health, renewal risk, expansion opportunities, churn drivers, proof opportunities, and founder attention accounts.
+
+## Product roadmap input
+
+[Founder Product Feedback Roadmap OS](https://github.com/shubham1502-hue/founder-product-feedback-roadmap-os) can feed the weekly operating review with roadmap decisions, repeated customer themes, product gaps, non-product fixes, discovery needs, owner actions, and product risks.
 
 ## Where this fits in the Founder OS
 
