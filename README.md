@@ -97,6 +97,10 @@ Customize these before using the repo for a real company:
 - review sections
 - decision owners
 
+## Onboarding input
+
+[Founder Customer Onboarding OS](https://github.com/shubham1502-hue/founder-customer-onboarding-os) can feed the weekly operating review with onboarding health, activation risk, founder attention accounts, SLA issues, owner gaps, and next actions.
+
 ## Where this fits in the Founder OS
 
 Use this as the weekly cadence layer. It can absorb signals from `founder-os-revenue-engine`, `startup-metrics-playbook`, `founder-ai-workflow-roi-os`, and `board-pack-investor-update-agent`.
