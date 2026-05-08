@@ -106,7 +106,7 @@ Integrated:
 Use this repo with the Founder OS ecosystem if you want to connect it to adjacent operating workflows.
 
 - Use as the weekly review layer.
-- Pull inputs from [founder-os-revenue-engine](https://github.com/shubham1502-hue/founder-os-revenue-engine), [founder-customer-onboarding-os](https://github.com/shubham1502-hue/founder-customer-onboarding-os), [founder-ai-workflow-roi-os](https://github.com/shubham1502-hue/founder-ai-workflow-roi-os), and [board-pack-investor-update-agent](https://github.com/shubham1502-hue/board-pack-investor-update-agent).
+- Pull inputs from [founder-os-revenue-engine](https://github.com/shubham1502-hue/founder-os-revenue-engine), [founder-customer-onboarding-os](https://github.com/shubham1502-hue/founder-customer-onboarding-os), [founder-retention-expansion-os](https://github.com/shubham1502-hue/founder-retention-expansion-os), [founder-ai-workflow-roi-os](https://github.com/shubham1502-hue/founder-ai-workflow-roi-os), and [board-pack-investor-update-agent](https://github.com/shubham1502-hue/board-pack-investor-update-agent).
 - Use it even if you have no other repo.
 
 ## Lifecycle handoff
@@ -115,6 +115,7 @@ Before:
 
 - [founder-os-revenue-engine](https://github.com/shubham1502-hue/founder-os-revenue-engine) for GTM and funnel risks.
 - [founder-customer-onboarding-os](https://github.com/shubham1502-hue/founder-customer-onboarding-os) for onboarding and activation risks.
+- [founder-retention-expansion-os](https://github.com/shubham1502-hue/founder-retention-expansion-os) for customer health, renewal risk, expansion opportunities, churn drivers, and proof opportunities.
 - [founder-ai-workflow-roi-os](https://github.com/shubham1502-hue/founder-ai-workflow-roi-os) for AI leverage priorities.
 - Weekly metrics from your internal tracker.
 
@@ -134,9 +135,13 @@ After:
 
 [Founder Customer Onboarding OS](https://github.com/shubham1502-hue/founder-customer-onboarding-os) can feed the weekly operating review with onboarding health, activation risk, founder attention accounts, SLA issues, owner gaps, and next actions.
 
+## Retention and expansion input
+
+[Founder Retention Expansion OS](https://github.com/shubham1502-hue/founder-retention-expansion-os) can feed the weekly operating review with customer health, renewal risk, expansion opportunities, churn drivers, proof opportunities, and founder attention accounts.
+
 ## Where this fits in the Founder OS
 
-Use this as the weekly cadence layer. It can absorb signals from `founder-os-revenue-engine`, `startup-metrics-playbook`, `founder-ai-workflow-roi-os`, and `board-pack-investor-update-agent`.
+Use this as the weekly cadence layer. It can absorb signals from `founder-os-revenue-engine`, `founder-customer-onboarding-os`, `founder-retention-expansion-os`, `startup-metrics-playbook`, `founder-ai-workflow-roi-os`, and `board-pack-investor-update-agent`.
 
 ## Why this matters
 
