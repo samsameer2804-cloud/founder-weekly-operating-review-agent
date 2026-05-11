@@ -8,20 +8,81 @@ from .analysis import money, percent
 
 def write_outputs(analysis: dict, out_dir: Path) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
-    (out_dir / "weekly_operating_review.md").write_text(render_weekly_review(analysis), encoding="utf-8")
-    (out_dir / "investor_safe_update.md").write_text(render_investor_update(analysis), encoding="utf-8")
-    (out_dir / "team_asks.md").write_text(render_team_asks(analysis), encoding="utf-8")
-    (out_dir / "next_week_plan.md").write_text(render_next_week_plan(analysis), encoding="utf-8")
-    (out_dir / "analysis.json").write_text(json.dumps(analysis, indent=2), encoding="utf-8")
+
+    weekly_review = render_weekly_review(analysis)
+
+    (out_dir / "weekly_operating_review.md").write_text(
+        weekly_review,
+        encoding="utf-8"
+    )
+
+    html_content = f"""
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Weekly Operating Review</title>
+
+    <style>
+        body {{
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            color: #222;
+        }}
+
+        h1 {{
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }}
+
+        pre {{
+            white-space: pre-wrap;
+            font-family: Arial, sans-serif;
+        }}
+    </style>
+</head>
+
+<body>
+<pre>{weekly_review}</pre>
+</body>
+</html>
+"""
+
+    (out_dir / "weekly_operating_review.html").write_text(
+        html_content,
+        encoding="utf-8"
+    )
+
+    (out_dir / "investor_safe_update.md").write_text(
+        render_investor_update(analysis),
+        encoding="utf-8"
+    )
+
+    (out_dir / "team_asks.md").write_text(
+        render_team_asks(analysis),
+        encoding="utf-8"
+    )
+
+    (out_dir / "next_week_plan.md").write_text(
+        render_next_week_plan(analysis),
+        encoding="utf-8"
+    )
+
+    (out_dir / "analysis.json").write_text(
+        json.dumps(analysis, indent=2),
+        encoding="utf-8"
+    )
 
 
 def render_weekly_review(analysis: dict) -> str:
     latest = analysis["latest"]
     deltas = analysis["deltas"]
+
     lines = [
         f"# Weekly Operating Review: {latest['week']}",
         "",
-        f"## Headline",
+        "## Headline",
         "",
         analysis["headline"],
         "",
@@ -40,22 +101,44 @@ def render_weekly_review(analysis: dict) -> str:
         "## Risks",
         "",
     ]
+
     if analysis["risks"]:
         for risk in analysis["risks"]:
-            lines.append(f"- **{risk['severity'].title()} - {risk['area'].title()}:** {risk['risk']} {risk['why_it_matters']}")
+            lines.append(
+                f"- **{risk['severity'].title()} - {risk['area'].title()}:** "
+                f"{risk['risk']} {risk['why_it_matters']}"
+            )
     else:
         lines.append("- No material operating risk triggered this week.")
 
     lines.extend(["", "## Priorities", ""])
-    lines.extend(f"{index}. {priority}" for index, priority in enumerate(analysis["priorities"], start=1))
+    lines.extend(
+        f"{index}. {priority}"
+        for index, priority in enumerate(analysis["priorities"], start=1)
+    )
+
     lines.extend(["", "## Team Asks", ""])
-    lines.extend(f"- **{ask['team']}:** {ask['ask']}" for ask in analysis["team_asks"])
-    lines.extend(["", "## Investor-Safe Summary", "", analysis["investor_safe_summary"], ""])
+    lines.extend(
+        f"- **{ask['team']}:** {ask['ask']}"
+        for ask in analysis["team_asks"]
+    )
+
+    lines.extend(
+        [
+            "",
+            "## Investor-Safe Summary",
+            "",
+            analysis["investor_safe_summary"],
+            "",
+        ]
+    )
+
     return "\n".join(lines)
 
 
 def render_investor_update(analysis: dict) -> str:
     latest = analysis["latest"]
+
     return "\n".join(
         [
             f"# Investor Update Draft: {latest['week']}",
@@ -64,7 +147,10 @@ def render_investor_update(analysis: dict) -> str:
             "",
             "## Current Focus",
             "",
-            *[f"- {priority}" for priority in analysis["priorities"][:3]],
+            *[
+                f"- {priority}"
+                for priority in analysis["priorities"][:3]
+            ],
             "",
         ]
     )
@@ -72,21 +158,37 @@ def render_investor_update(analysis: dict) -> str:
 
 def render_team_asks(analysis: dict) -> str:
     latest = analysis["latest"]
-    lines = [f"# Team Asks: {latest['week']}", ""]
-    lines.extend(f"- **{ask['team']}:** {ask['ask']}" for ask in analysis["team_asks"])
+
+    lines = [
+        f"# Team Asks: {latest['week']}",
+        "",
+    ]
+
+    lines.extend(
+        f"- **{ask['team']}:** {ask['ask']}"
+        for ask in analysis["team_asks"]
+    )
+
     lines.append("")
+
     return "\n".join(lines)
 
 
 def render_next_week_plan(analysis: dict) -> str:
     latest = analysis["latest"]
+
     lines = [
         f"# Next Week Operating Plan: {latest['week']}",
         "",
         "## Focus",
         "",
     ]
-    lines.extend(f"{index}. {priority}" for index, priority in enumerate(analysis["priorities"], start=1))
+
+    lines.extend(
+        f"{index}. {priority}"
+        for index, priority in enumerate(analysis["priorities"], start=1)
+    )
+
     lines.extend(
         [
             "",
@@ -98,4 +200,5 @@ def render_next_week_plan(analysis: dict) -> str:
             "",
         ]
     )
+
     return "\n".join(lines)
