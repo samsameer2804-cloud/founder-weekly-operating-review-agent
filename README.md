@@ -4,6 +4,15 @@ Generate a founder-ready weekly operating review from startup metrics and compan
 
 <!-- FOUNDER_OS_STANDARD_README -->
 
+## Non-technical starting point
+
+If you are a founder and want the no-code version first, start with the matching kit in:
+[Founder OS Adoption Kit](https://github.com/shubham1502-hue/founder-os-adoption-kit)
+
+This repo is the deeper module. The adoption kit gives you the simple template, sample input, founder prompt, and sample output.
+
+Start with the [Weekly Review Kit](https://github.com/shubham1502-hue/founder-os-adoption-kit/tree/main/starter-kits/weekly-review-kit).
+
 ## The founder problem
 
 Weekly reviews become slow when metrics, risks, product issues, GTM movement, and team asks are assembled manually. Founders need one operating packet that shows what changed, what matters, and what decisions need attention.
