@@ -59,7 +59,7 @@ After:
 
 - Run `python -m pip install -e .`.
 - Run `PYTHONPATH=src python3 -m founder_weekly_review --metrics examples/weekly_metrics.csv --context examples/company_context.md --out outputs/demo`.
-- Open `outputs/demo/weekly_operating_review.md` first.
+- Open `docs/sample_weekly_operating_review.md` first to inspect the committed demo. After running the command, open `outputs/demo/weekly_operating_review.md` locally.
 
 ## How to fork and use this for your company
 
@@ -75,7 +75,7 @@ After:
 - Replace one CSV: `examples/weekly_metrics.csv`.
 - Edit one context file: `examples/company_context.md`.
 - Run one command.
-- Read one output first: `outputs/demo/weekly_operating_review.md`.
+- Read one committed demo first: `docs/sample_weekly_operating_review.md`.
 
 ## Input format
 
@@ -86,7 +86,8 @@ The default sample data and examples are synthetic, anonymized, or template-only
 
 ## Output files
 
-- `outputs/demo/weekly_operating_review.md`: founder weekly review memo generated from the CLI
+- `docs/sample_weekly_operating_review.md`: committed sample weekly review for quick inspection
+- `outputs/demo/weekly_operating_review.md`: founder weekly review memo generated locally from the CLI
 
 ## Example founder workflow
 
@@ -263,7 +264,7 @@ python3 -m founder_weekly_review \
  --out outputs/demo
 ```
 
-Then open:
+Then open the local generated outputs:
 
 - `outputs/demo/weekly_operating_review.md`
 - `outputs/demo/investor_safe_update.md`
