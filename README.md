@@ -97,6 +97,11 @@ The default sample data and examples are synthetic, anonymized, or template-only
 - Thursday: close decisions.
 - Friday: roll decisions into next week and investor-safe notes.
 
+  ## Sample Reports
+
+- Markdown sample: `docs/sample_weekly_operating_review.md`
+- HTML sample: `docs/sample_weekly_operating_review.html`
+
 ## Customization guide
 
 Customize these before using the repo for a real company:
