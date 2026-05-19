@@ -4,6 +4,23 @@ Generate a founder-ready weekly operating review from startup metrics and compan
 
 <!-- FOUNDER_OS_STANDARD_README -->
 
+## Start here
+
+| Reader | Open first | Why | CTA |
+| --- | --- | --- | --- |
+| Founder | `docs/sample_weekly_operating_review.md` | Inspect the committed weekly review before running anything. | Use the structure for the next operating review. |
+| Non-technical operator | `examples/weekly_metrics.csv` | See the input shape for a weekly review. | Copy the columns into a private tracker. |
+| Technical operator | `README.md#quick-start` | Run the local command and generate the demo output. | Compare `outputs/demo/weekly_operating_review.md` with the sample. |
+| Hiring manager | `docs/sample_weekly_operating_review.md` | See how metrics, risks, asks, and next actions become cadence. | Review the memo for decision clarity. |
+
+## Use this instead of adjacent repos when
+
+| If the operating problem is... | Use this repo | Use the adjacent repo instead when... |
+| --- | --- | --- |
+| The founder needs one weekly packet across metrics, risks, asks, and next actions | Yes | Use source modules first if the underlying workflow is not yet structured. |
+| Revenue, onboarding, retention, product, hiring, or AI signals need one cadence | Yes | Use the relevant source repo when the problem is diagnosing that function. |
+| Investor or board narrative is the primary output | Not first | Use `board-pack-investor-update-agent` when the operating packet needs investor-ready narrative. |
+
 ## Non-technical starting point
 
 If you are a founder and want the no-code version first, start with the matching kit in:
