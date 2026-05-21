@@ -104,6 +104,7 @@ The default sample data and examples are synthetic, anonymized, or template-only
 ## Output files
 
 - `docs/sample_weekly_operating_review.md`: committed sample weekly review for quick inspection
+- `docs/sample_weekly_operating_review.html`: committed HTML sample weekly review for browser preview
 - `outputs/demo/weekly_operating_review.md`: founder weekly review memo generated locally from the CLI
 
 ## Example founder workflow
